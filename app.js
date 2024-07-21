@@ -164,3 +164,147 @@
     
 
 */
+
+//function is a reusable code block -> 
+
+// const var1 = function isEven(n){
+//     //write logic 
+//     if(n % 2 == 0){
+//         console.log('even');
+
+//     }
+//     else{
+//         console.log('odd')
+//     }
+// }
+// let a = 10;
+// console.log(var1(a, ))
+// let d = 200;
+// console.log(var1(d))
+// console.log(var1)
+// console.log(isEven)//referring a
+
+/* 
+    1) calling a function
+    2) referring a function
+*/
+
+
+// let abcd = 10;
+// console.log(abcd)
+
+
+
+
+
+
+
+// const var1 = function isEven(n, n2= 300, n3 =400){
+//     console.log(n);
+//     console.log(n2);
+//     console.log(n3);
+// }
+// // let a = 10;
+// // let b = 200;
+// // var1(a, b)
+// // let d = 200;
+// // var1(d)
+// var1(5,15)
+
+/* 
+    ''
+    ""
+    ``
+    '"
+
+*/
+//data structures -> programming -
+//a way of organising the data 
+
+// const studentArr = ['naman', 'shivalal', 'rahul', 'ankit'];
+
+//objects are key value pairs
+// const obj = {
+//     key1: 'value1',
+//     key2: 'value2'
+// }
+// console.log(obj['key1'])
+
+// const student = {
+//     name: 'naman',
+//     rollNo: 1,
+//     gender: 'male',
+//     age: 10,
+//     address: 'delhi'
+// }
+
+//... -> rest spread operator
+// function abcd(){
+    
+// }
+
+/* 
+    generateARandomStrongPassword 
+
+*/
+
+// function getRandomPassword(){
+//     let pass = 'defg'+(Date.now() * (Math.random() * 100 -1)) + 'a';
+//     console.log(pass)
+// }
+
+// getRandomPassword()
+
+// function func(){
+//     console.log('execute')
+// }
+
+// function higher(n, n1, n2){
+//     n2()
+// }
+// let a = 10;
+// let b = 20;
+// let c = 30
+// higher(a, b, func)
+
+/* 
+    higher order funciton -> a function which takes another function as a parameter or a funciton which return another functiion is referred to as a higher order finciton
+
+    first class function -> a function which is getting passed to another function is referred ot as a first clalss funciton
+
+    callbacks 
+
+*/
+// function hof(func){
+//     func();
+//     return function sample(){
+//         var a =10;
+//         console.log(a);
+//     }
+// }
+// let a = 100;
+// const func = hof(function def(){
+//     console.log('i am a callback func')
+// });
+// func();
+
+/* 
+    map -> hof
+    filter -> hof
+    reduce -> hof
+    find -> hof
+    forEach -> hof 
+
+*/
+
+function higher(a1, a2){
+    a1(a2)
+}
+
+higher(function(a){
+    console.log(a)
+}, 200)
+
+/* 
+    closures -> 
+*/
